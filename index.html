@@ -80,7 +80,7 @@
       z-index: 2; /* Garante que o texto fique acima da imagem */
     }
 
-    #img_direita_pos{
+    #home{
       position: relative;
       z-index: 1;
       height: 50%;
@@ -174,11 +174,34 @@
       margin: 20px;
     }
 
+    .footer{
+      color: #14453D;
+      width: 100%;
+      position: fixed;
+      bottom: 0px;
+      padding: 1em 0;
+      z-index:2;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
     
 
     /* Ajusta o layout para dispositivos móveis */
     @media (max-width: 320px) {
-      #img_direita_pos {
+      #home {
           margin-top: 20px; /* Ajuste para dispositivos móveis */
           z-index: 1; /* A imagem ficará abaixo do texto */
       }
@@ -245,22 +268,13 @@
 
 </style>
 <body>
-
-
-
-  Broken same-page link
-A link to another location within the page is present but does not have a corresponding target.
-
-
-A page does not have a first level heading.
-
-
-    <!--------------------------------------------Cabeçalho----------------------------------->
+  <!--------------------------------------------Cabeçalho----------------------------------->
+  <header>
     <div class="cabecalho">
       <div class="texto_logo"> <b>Formanda Ritielen Rodrigues</b></div>
       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">15 Ritielen Rodrigues</a>
+          <a class="navbar-brand" href="#home">15 Ritielen Rodrigues</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -290,12 +304,15 @@ A page does not have a first level heading.
         </div>
       </nav>
     </div>
-    <!--------------------------------------------Corpo--------------------------------------->
+  </header>
+
+  <!--------------------------------------------Corpo--------------------------------------->
+  <main>
     <div class="site">
       <div class="row">
         <!-- Segunda Coluna (Imagem) -->
         <div class="col-12 col-md-6 order-1 order-md-2" id="home">
-          <div id="img_direita_pos">
+          <div id="home">
               <img src="imagens/coding.jpg" 
               alt="Portátil sobre uma mesa, juntamente com alguns livros. O fundo, desfocado, aparecem plantas e parede branca." 
               title="Portátil sobre uma mesa, juntamente com alguns livros. O fundo, desfocado, aparecem plantas e parede branca."  style="height: auto; max-width: 100%;">
@@ -304,13 +321,13 @@ A page does not have a first level heading.
         <!-- Primeira Coluna (Texto) -->
         <div class="col-12 col-md-6 order-2 order-md-1">
             <div class="texto_esquerda">
-              From Brazilian <i>pastry chef</i> <br>to <i>data</i> in Portugal<br><br><br><br>
+              <h1>From Brazilian <i>pastry chef</i> <br>to <i>data</i> in Portugal<br><br><br><br></h1>
             </div>
         </div>
       </div>    
   
       <div class="about order-md-3">
-          <div>Transformar sua carreira é um passo corajoso rumo ao crescimento e novas oportunidades.</div>
+          <div><h1>Transformar sua carreira é um passo corajoso rumo ao crescimento e novas oportunidades.</h1></div>
           <div class="limpar"></div>
       </div>
 
@@ -328,7 +345,7 @@ A page does not have a first level heading.
           </div>
           <!-- Primeira Coluna (Texto) -->
           <div class="texto_prod_direita col-md-6" style="height: auto;">
-              <h3 id="about_me">ABOUT ME</h3><br><hr/><br> Oi! Eu sou a Ritielen, uma brasileira que decidiu dar um salto de fé e começar uma nova vida em outro país. Nunca pensei que conheceria outros países e agora estou aqui, morando fora! Isso porque em 2021, junto com meu marido e nosso cachorro, embarcamos nessa aventura e aterrissamos em Portugal.<br>
+              <h2 id="about_me">ABOUT ME</h2><br><hr/><br> Oi! Eu sou a Ritielen, uma brasileira que decidiu dar um salto de fé e começar uma nova vida em outro país. Nunca pensei que conheceria outros países e agora estou aqui, morando fora! Isso porque em 2021, junto com meu marido e nosso cachorro, embarcamos nessa aventura e aterrissamos em Portugal.<br>
             <br>
             O que começou como uma mistura de ansiedade e empolgação se transformou em uma realidade repleta de desafios, conquistas e histórias que valem a pena ser contadas.
             <br>
@@ -340,7 +357,7 @@ A page does not have a first level heading.
         <div class="row">
           <!-- Primeira Coluna (Texto) -->
           <div class="transicao col-md-6"  style="height: auto;">
-            <h3 id="transicao">TRANSIÇÃO DE CARREIRA</h3><br><hr/><br> 
+            <h2 id="transicao">TRANSIÇÃO DE CARREIRA</h2><br><hr/><br> 
               A transição de carreira é um caminho desafiador, mas extremamente enriquecedor.
               Após 10 anos à frente de minha chocolateria, onde aprendi a importância da dedicação, 
               resolução de problemas e foco no cliente, decidi redirecionar minha carreira para a área de 
@@ -381,7 +398,7 @@ A page does not have a first level heading.
         title="Descrição adicional que aparece ao passar o mouse"  class="img-fluid" alt="..."/>
 
         <div class="texto hobbies">
-          <h3 id="hobbies">HOBBIES</h3><br><hr/><br>
+          <h2 id="hobbies">HOBBIES</h2><br><hr/><br>
           <div>Explorar uma variedade de hobbies, como cerâmica fria, aquarela, pintura de parede,
               culinária, lettering, trilhos e viagens, têm sido uma jornada enriquecedora para mim.
               Cada atividade me permitiu desenvolver habilidades únicas, como criatividade, paciência 
@@ -438,7 +455,7 @@ A page does not have a first level heading.
               title="Um recipiente de cerâmica feito à mão, ainda em estado cru, com a palavra 'Chazin'"  class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Cerâmica</h5>
-                <p class="card-text"> content.</p>
+                <p class="card-text"></p>
               </div>
             </div>
           </div>
@@ -468,7 +485,7 @@ A page does not have a first level heading.
           </div>
 
           <div class="texto musica">
-            <h3 id="musica">Música</h3><br><hr/><br>
+            <h2 id="musica">Música</h2><br><hr/><br>
             <div>Por fim, deixo aqui uma música que gosto bastante!</div>
           </div>
           
@@ -481,14 +498,38 @@ A page does not have a first level heading.
       
       </div>
     
-      
+      <div class="texto musica">
+        <h2 id="musica">Música</h2><br><hr/><br>
+        <div>Por fim, deixo aqui uma música que gosto bastante!</div>
+      </div>
     
     
 
     </div>
-        
+    
+    
     
     <!-- JavaScript do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </main>
+  
+  <!--------------------------------------------Rodapé--------------------------------------->
+  <footer>
+    <p>© 2025 Minha Empresa. Todos os direitos reservados.</p>
+    <address>
+      Email: <a href="mailto:ritielenreis@gmail.com">ritielenreis@gmail.com</a><br>
+      Telefone: <a href="tel:+351910344979">+351 910-244-979</a>
+    </address>
+
+    <nav aria-label="Rodapé">
+      <ul>
+        <li><a href="#home">Voltar ao topo</a></li>
+        <li><a href="#about_me">Sobre Mim</a></li>
+        <li><a href="#transicao">Transição de Carreira</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#musica">Música</a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>
