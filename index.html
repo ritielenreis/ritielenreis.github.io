@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt-br"> <!--- Aqui foi usado pt-br pois a API de linguagem de sinais que encontrei é brasileira--->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,8 @@
     <!-- CSS do Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-----------Botão de acessibilidade--------->
     <script tabindex="0" src="https://website-widgets.pages.dev/dist/sienna.min.js"></script>
 </head>
 <style>
@@ -115,9 +117,7 @@
         padding-top: 100px;
         color: #333D29;
         float: right;
-        text-decoration: none;
-        
-        
+        text-decoration: none;        
     }
 
     .transicao{
@@ -252,8 +252,6 @@
         margin-top: 20px; /* Ajuste para dispositivos móveis */
       }
 
-    }
-
 </style>
 <body>
   <!--------------------------------------------Cabeçalho----------------------------------->
@@ -269,7 +267,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Homepage</a>
+                <a class="nav-link active" aria-current="page" href="#home">Início</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about_me">Sobre Mim</a>
@@ -329,7 +327,7 @@
           </div>
           <!-- Primeira Coluna (Texto) -->
           <div class="texto_prod_direita col-md-6" style="height: auto;">
-              <h2 id="about_me">ABOUT ME</h2><br><hr/><br> Oi! Eu sou a Ritielen, uma brasileira que decidiu dar um salto de fé e começar uma nova vida em outro país. Nunca pensei que conheceria outros países e agora estou aqui, morando fora! Isso porque em 2021, junto com meu marido e nosso cachorro, embarcamos nessa aventura e aterrissamos em Portugal.<br>
+              <h2 id="about_me">SOBRE MIM</h2><br><hr/><br> Oi! Eu sou a Ritielen, uma brasileira que decidiu dar um salto de fé e começar uma nova vida em outro país. Nunca pensei que conheceria outros países e agora estou aqui, morando fora! Isso porque em 2021, junto com meu marido e nosso cachorro, embarcamos nessa aventura e aterrissamos em Portugal.<br>
             <br>
             O que começou como uma mistura de ansiedade e empolgação se transformou em uma realidade repleta de desafios, conquistas e histórias que valem a pena ser contadas.
             <br>
@@ -352,9 +350,9 @@
 
           <!-- Segunda Coluna (Imagem) -->
           <div class="foto_transicao col-md-6">
-            <img src="https://memudeidobrasil7.wordpress.com/wp-content/uploads/2024/09/img_20220615_1717125218640571578581294.jpg?w=819" 
-            alt="Uma mulher de vermelho em frente a uma porta azul"
-            title="Uma mulher negra sorridente usando um macacão veraneio na cor vermelha. Ela está em frente uma porta azul e tem pendurada no ombro uma ecobag com estampa em pop art"  
+            <img src="/imagens/sobre_mim.jpg" 
+            alt="Uma mulher de marrom em frente corredor de arcos"
+            title="Uma mulher de marrom em frente corredor de arcos"  
             height="630px" style="border-radius:15px">
           </div>
           <div class="limpar"></div>
@@ -397,7 +395,7 @@
         <div class="row justify-content-md-center">
           <div class="col-md-auto">
             <div class="card" style="width: 22rem;">
-              <img src="/imagens/aquarela_2.jpg" 
+              <img src="/imagens/aquarela.jpg" 
               alt="Aquarela escrita 'Dores, amores, receitas de [desenho de uma pão]'" 
               title="Uma mão segurando um cartão decorado com aquarela, contendo o texto 'Dores, amores, receitas de [desenho de uma pão]'. Ao fundo, uma praça com uma fonte e edifícios históricos sob um céu azul com algumas nuvens."  class="card-img-top">
               <div class="card-body">
@@ -508,5 +506,17 @@
       </ul>
     </nav>
   </footer>
+
+    <!--------- VLibras------------>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 </body>
 </html>
